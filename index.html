@@ -8,6 +8,9 @@
     <!-- Link cdn du TailWind-->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Link En Ligne des Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     
 
 
@@ -19,7 +22,25 @@
     
     
     <header>
+        <h1 class="mb-4 text-4xl mt-[6%] text-center font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Git <mark class="px-2 text-white bg-purple-700 rounded dark:bg-purple-600">See</mark></h1>
+        <h1 id="lightmode" class="hidden mb-4 text-2xl text-center font-bold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white mt-[4%] cursor-pointer">Light <i class="fa-regular fa-sun text-purple-700"></i> </h1>
+        <h1 id="darkmode" class="mb-4 text-2xl text-center font-bold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white mt-[4%] cursor-pointer">Dark <i class="fa-solid fa-moon text-purple-700"></i> </h1>
+        
+        
+        <form class="max-w-md mx-auto">   
+            <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+            <div class="relative">
+                <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                    </svg>
+                </div>
+                <input type="search" id="default-search" class="outline-none block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-purple-500 focus:border-purple-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500" placeholder="Search GitHub Username..." required />
+                <button type="submit" class="text-white absolute end-2.5 bottom-2.5 bg-purple-600 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Search</button>
+            </div>
+        </form>
 
+    
     </header>
     <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
