@@ -36,7 +36,7 @@
                     </svg>
                 </div>
                 <input type="search" id="default-search" class="outline-none block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-purple-500 focus:border-purple-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500" placeholder="Search GitHub Username..." required />
-                <button type="submit" class="text-white absolute end-2.5 bottom-2.5 bg-purple-600 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Search</button>
+                <button  id="searchrbt" type="submit" class="text-white absolute end-2.5 bottom-2.5 bg-purple-600 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Search</button>
             </div>
         </form>
 
@@ -58,17 +58,17 @@
                 <div class="grid grid-cols-3 text-center order-last md:order-first mt-20 md:mt-0">
                   
                   <div>
-                    <p class="font-bold text-gray-700 text-xl">18</p>
+                    <p id="reposcnt" class="font-bold text-gray-700 text-xl">18</p>
                     <p class="text-gray-400">Repos</p>
                   </div>
 
                   <div>
-                       <p class="font-bold text-gray-700 text-xl">2</p>
+                    <p id="flwrscnt" class="font-bold text-gray-700 text-xl">2</p>
                     <p class="text-gray-400">Followers</p>
                   </div>
 
                   <div>
-                    <p class="font-bold text-gray-700 text-xl">2</p>
+                    <p id="flwngcnt" class="font-bold text-gray-700 text-xl">2</p>
                     <p class="text-gray-400">Following</p>
                   </div>
 
@@ -77,14 +77,14 @@
                 <div class="">
 
                   <div class="relative overflow-hidden w-48 h-48 bg-indigo-100 mx-auto rounded-full shadow-4xl absolute inset-x-0 top-0 -mt-24 flex items-center justify-center text-indigo-500">
-                    <img class="absolute object-cover w-[100%] h-[100%]" src="" alt="Photo de Profile">
+                    <img id="prflimg" class="absolute object-cover w-[100%] h-[100%]" src="" alt="Photo de Profile">
                   </div>
                 </div>
             
                 <div class="">
 
                 <button class="text-white py-2 px-4 uppercase rounded bg-purple-600 hover:bg-purple-800 shadow hover:shadow-lg font-medium transition transform hover:-translate-y-0.5">
-                visit 
+                <a id="repovst" href=""> visit </a>
                 </button>
                 </div>
 
@@ -92,16 +92,16 @@
             
               <div class="mt-20 text-center border-b pb-12">
 
-                <h1 class="text-4xl font-medium text-gray-700">Oussama Amou</h1>
-                <p class="font-medium text-gray-600 mt-3">Morocco</p>
+                <h1 id="usergitname" class="text-4xl font-medium text-gray-700">Oussama Amou</h1>
+                <p id="usercntry" class="font-medium text-gray-600 mt-3">Morocco</p>
             
-                <p class="mt-8 text-gray-500">@oussamaamou</p>
-                <p class="mt-2 text-gray-500">YouCode</p>
+                <p id="useraddrs" class="mt-8 text-gray-500">@oussamaamou</p>
+                <p id="usercpny" class="mt-2 text-gray-500">YouCode</p>
               </div>
             
               <div class="mt-12 flex flex-col justify-center">
 
-                <p class="text-gray-600 text-center font-light lg:px-16">This profile has no bio</p>
+                <p id="userbio" class="text-gray-600 text-center font-light lg:px-16">This profile has no bio</p>
               </div>
             
             </div>
@@ -137,6 +137,6 @@
     <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
 
-    <script src="../assets/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
