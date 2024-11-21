@@ -58,3 +58,22 @@ srchbtn.addEventListener('click', function(event){
 
 });
 
+
+darkbtn.addEventListener('click' , function(){
+    
+    document.body.classList.remove('ligth');
+    document.body.classList.add('dark');
+    lightbtn.style.display = "block";
+    darkbtn.style.display = "none";
+
+});
+
+lightbtn.addEventListener('click' , function(){
+
+    document.body.classList.add('ligth');
+    document.body.classList.remove('dark');
+    lightbtn.style.display = "none";
+    darkbtn.style.display = "block";
+});
+
+
