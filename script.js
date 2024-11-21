@@ -22,5 +22,39 @@ const repovst = document.getElementById("repovst");
 const userbio = document.getElementById("userbio");
 
 
+srchbtn.addEventListener('click', function(event){
 
+    event.preventDefault();
+
+    const url = `https://api.github.com/users/${srchbar.value}`;
+
+    async function getdata() {
+        const response = await fetch(url);
+        const data = await response.json();
+
+        nbrrepo.textContent = data.public_repos;
+
+        nbrflwrs.textContent = data.followers;
+
+        nbrflwng.textContent = data.following;
+
+        imgprfl.src = data.avatar_url;
+
+        username.textContent = data.name;
+
+        country.textContent = data.location || "Non Disponible";
+
+        addressgit.textContent = `@${data.login}`;
+
+        gitcpny.textContent = data.company || "Non Disponible";
+
+        repovst.href = data.html_url;
+
+        userbio.textContent = data.bio || "Ce Profile n'a pas de Bio ";
+
+    };
+
+    getdata();
+
+});
 
