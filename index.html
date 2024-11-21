@@ -7,6 +7,11 @@
 
     <!-- Link cdn du TailWind-->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+          darkMode: 'class',
+      }
+    </script>
 
     <!-- Link En Ligne des Icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,15 +21,15 @@
 
 
 </head>
-<body class="dark:bg-slate-900">
+<body class="bg-white dark:bg-slate-900 p-0 m-0">
     <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     
     
     
-    <header>
-        <h1 class="mb-4 text-4xl mt-[6%] text-center font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Git <mark class="px-2 text-white bg-purple-700 rounded dark:bg-purple-500">See</mark></h1>
-        <h1 id="lightmode" class="hidden mb-4 text-2xl text-center font-bold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white mt-[4%] cursor-pointer">Light <i class="fa-regular fa-sun text-purple-700 dark:bg-purple-500"></i> </h1>
-        <h1 id="darkmode" class="mb-4 text-2xl text-center font-bold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white mt-[4%] cursor-pointer">Dark <i class="fa-solid fa-moon text-purple-700 dark:bg-purple-500"></i> </h1>
+    <header class="dark:bg-slate-900">
+        <h1 class="mb-4 text-4xl pt-[10%] text-center font-bold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Git <mark class="px-2 text-white bg-purple-700 rounded dark:bg-purple-500">See</mark></h1>
+        <h1 id="lightmode" class="hidden mb-4 text-2xl text-center font-bold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-3xl dark:text-white mt-[4%] cursor-pointer">Light <i class="fa-regular fa-sun text-purple-700 dark:text-purple-400"></i> </h1>
+        <h1 id="darkmode" class="mb-4 text-2xl text-center font-bold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-3xl dark:text-white mt-[4%] cursor-pointer">Dark <i class="fa-solid fa-moon text-purple-700 dark:bg-purple-500"></i> </h1>
         
         
         <form class="max-w-md mx-auto">   
@@ -48,10 +53,10 @@
     
     
     
-    <main >
+    <main class="dark:bg-slate-900">
           <div class="p-16">
 
-            <div class="p-8 bg-white shadow mt-24 dark:bg-slate-900">
+            <div class="p-8 bg-white shadow mt-24 dark:bg-slate-700">
               
               <div class="grid grid-cols-1 md:grid-cols-3">
 
