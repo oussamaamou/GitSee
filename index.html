@@ -16,15 +16,15 @@
 
 
 </head>
-<body >
+<body class="dark:bg-slate-900">
     <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     
     
     
     <header>
-        <h1 class="mb-4 text-4xl mt-[6%] text-center font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Git <mark class="px-2 text-white bg-purple-700 rounded dark:bg-purple-600">See</mark></h1>
-        <h1 id="lightmode" class="hidden mb-4 text-2xl text-center font-bold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white mt-[4%] cursor-pointer">Light <i class="fa-regular fa-sun text-purple-700"></i> </h1>
-        <h1 id="darkmode" class="mb-4 text-2xl text-center font-bold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white mt-[4%] cursor-pointer">Dark <i class="fa-solid fa-moon text-purple-700"></i> </h1>
+        <h1 class="mb-4 text-4xl mt-[6%] text-center font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Git <mark class="px-2 text-white bg-purple-700 rounded dark:bg-purple-500">See</mark></h1>
+        <h1 id="lightmode" class="hidden mb-4 text-2xl text-center font-bold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white mt-[4%] cursor-pointer">Light <i class="fa-regular fa-sun text-purple-700 dark:bg-purple-500"></i> </h1>
+        <h1 id="darkmode" class="mb-4 text-2xl text-center font-bold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white mt-[4%] cursor-pointer">Dark <i class="fa-solid fa-moon text-purple-700 dark:bg-purple-500"></i> </h1>
         
         
         <form class="max-w-md mx-auto">   
@@ -36,7 +36,7 @@
                     </svg>
                 </div>
                 <input type="search" id="default-search" class="outline-none block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-purple-500 focus:border-purple-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-purple-500 dark:focus:border-purple-500" placeholder="Search GitHub Username..." required />
-                <button  id="searchrbt" type="submit" class="text-white absolute end-2.5 bottom-2.5 bg-purple-600 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Search</button>
+                <button  id="searchrbt" type="submit" class="text-white absolute end-2.5 bottom-2.5 bg-purple-600 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 dark:text-white dark:bg-purple-500 dark:hover:bg-purple-700 dark:focus:ring-purple-800">Search</button>
             </div>
         </form>
 
@@ -51,25 +51,25 @@
     <main >
           <div class="p-16">
 
-            <div class="p-8 bg-white shadow mt-24">
+            <div class="p-8 bg-white shadow mt-24 dark:bg-slate-900">
               
               <div class="grid grid-cols-1 md:grid-cols-3">
 
                 <div class="grid grid-cols-3 text-center order-last md:order-first mt-20 md:mt-0">
                   
                   <div>
-                    <p id="reposcnt" class="font-bold text-gray-700 text-xl">18</p>
-                    <p class="text-gray-400">Repos</p>
+                    <p id="reposcnt" class="font-bold text-gray-700 text-xl dark:text-white">18</p>
+                    <p class="text-gray-400 dark:text-white">Repos</p>
                   </div>
 
                   <div>
-                    <p id="flwrscnt" class="font-bold text-gray-700 text-xl">2</p>
-                    <p class="text-gray-400">Followers</p>
+                    <p id="flwrscnt" class="font-bold text-gray-700 text-xl dark:text-white">2</p>
+                    <p class="text-gray-400 dark:text-white">Followers</p>
                   </div>
 
                   <div>
-                    <p id="flwngcnt" class="font-bold text-gray-700 text-xl">2</p>
-                    <p class="text-gray-400">Following</p>
+                    <p id="flwngcnt" class="font-bold text-gray-700 text-xl dark:text-white">2</p>
+                    <p class="text-gray-400 dark:text-white">Following</p>
                   </div>
 
                 </div>
@@ -83,7 +83,7 @@
             
                 <div class="">
 
-                <button class="text-white py-2 px-4 uppercase rounded bg-purple-600 hover:bg-purple-800 shadow hover:shadow-lg font-medium transition transform hover:-translate-y-0.5">
+                <button class="text-white py-2 px-4 uppercase rounded bg-purple-600 hover:bg-purple-800 dark:bg-purple-500 shadow hover:shadow-lg font-medium transition transform hover:-translate-y-0.5">
                 <a id="repovst" href="https://github.com/oussamaamou" target="_blank"> visit </a>
                 </button>
                 </div>
@@ -92,16 +92,16 @@
             
               <div class="mt-20 text-center border-b pb-12">
 
-                <h1 id="usergitname" class="text-4xl font-medium text-gray-700">Oussama Amou</h1>
-                <p id="usercntry" class="font-medium text-gray-600 mt-3">Morocco</p>
+                <h1 id="usergitname" class="text-4xl font-medium text-gray-700 dark:text-white">Oussama Amou</h1>
+                <p id="usercntry" class="font-medium text-gray-600 mt-3 dark:text-white">Morocco</p>
             
-                <p id="useraddrs" class="mt-8 text-gray-500">@oussamaamou</p>
-                <p id="usercpny" class="mt-2 text-gray-500">YouCode</p>
+                <p id="useraddrs" class="mt-8 text-gray-500 dark:text-white">@oussamaamou</p>
+                <p id="usercpny" class="mt-2 text-gray-500 dark:text-white">YouCode</p>
               </div>
             
               <div class="mt-12 flex flex-col justify-center">
 
-                <p id="userbio" class="text-gray-600 text-center font-light lg:px-16"> Ce Profile n'a pas de Bio </p>
+                <p id="userbio" class="text-gray-600 text-center font-light lg:px-16 dark:text-white"> Ce Profile n'a pas de Bio </p>
               </div>
             
             </div>
