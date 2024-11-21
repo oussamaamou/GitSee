@@ -3,7 +3,7 @@
 const lightbtn = document.getElementById("lightmode");
 const darkbtn = document.getElementById("darkmode");
 
-const srchbar = document.getElementById("default-search");
+const srchbar = document.getElementById("searchbarre");
 const srchbtn = document.getElementById("searchrbt");
 
 const nbrrepo = document.getElementById("reposcnt");
@@ -29,6 +29,7 @@ srchbtn.addEventListener('click', function(event){
     const url = `https://api.github.com/users/${srchbar.value}`;
 
     async function getdata() {
+
         const response = await fetch(url);
         const data = await response.json();
 
